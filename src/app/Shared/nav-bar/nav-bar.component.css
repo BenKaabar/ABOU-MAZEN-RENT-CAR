@@ -1,0 +1,295 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+/* ******************************** largeScreen ******************************** */
+.largeScreen {
+    width: 94%;
+    height: 150px;
+    display: flex;
+    padding: 25px 0px;
+}
+
+/* left largeScreen  */
+.left {
+    width: 15%;
+    padding: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* middle largeScreen  */
+.middle {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h6 {
+    font-family: Inter, sans-serif;
+    margin: 0px;
+    font-size: clamp(12px, 1.5vw, 20px);
+}
+
+h6:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    cursor: pointer;
+}
+
+/* right largeScreen  */
+.right {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.flag {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-selector {
+    position: relative;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0px;
+    list-style: none;
+    margin-top: 5px;
+    display: block;
+    height: auto;
+    min-height: fit-content;
+
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-height: 40px;
+
+}
+
+.dropdown-menu li:hover {
+    background: #eee;
+}
+
+.active-lang {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+span:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.icons {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i {
+    color: #000000;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+i:hover {
+    opacity: 0.6;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(12px, 1.5vw, 16px);
+    white-space: nowrap;
+}
+
+.whatsapp-btn img {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.button {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main,
+.largeScreen,
+.right,
+.flag,
+.language-selector {
+    overflow: visible;
+}
+
+/* ******************************** Small screen ******************************* */
+/* Small screens (900px) */
+@media screen and (max-width: 900px) {
+    .smallScreen {
+        width: 100%;
+    }
+
+    .mobilenavbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px;
+    }
+
+    .leftsmallScreen {
+        height: 70px;
+    }
+
+    .rightsmallScreen {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .menu-icon:hover {
+        opacity: 0.7;
+    }
+
+    .rotate {
+        animation: rotateIcon 0.3s ease;
+    }
+
+    @keyframes rotateIcon {
+        from {
+            transform: rotate(0deg) scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: rotate(180deg) scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* mobileDropdown */
+    .mobileDropdown {
+        width: 100%;
+        padding: 0px 30px;
+        text-align: end;
+    }
+
+    .navbarmenu {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-evenly;
+        animation: mobileMenuOpen 0.4s ease;
+    }
+
+    @keyframes mobileMenuOpen {
+        from {
+            opacity: 0;
+            max-height: 0;
+        }
+
+        to {
+            opacity: 1;
+            max-height: 500px;
+        }
+    }
+
+    .navbarmenu h6 {
+        font-size: clamp(16px, 1.5vw, 22px);
+    }
+
+    .language {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .language-open {
+        margin-bottom: 100px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        min-width: 150px;
+    }
+
+    .icons,
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 16px 0px;
+    }
+
+    .bi-instagram {
+        margin: 16px;
+    }
+
+    .button a {
+        width: 30%;
+    }
+    
+}
