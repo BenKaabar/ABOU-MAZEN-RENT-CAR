@@ -1,2 +1,59 @@
 <app-nav-bar></app-nav-bar>
-<h1>car for rent</h1>
+<div class="main">
+    <div class="title">
+        <h1>{{ 'carForRentTitle' | translate}}</h1>
+        <h4>{{ 'carForRentSubTitle' | translate}}</h4>
+    </div>
+
+    <!-- ************ Classics car ************ -->
+    <div class="cardHolder" *ngFor="let category of ClassicscarsList">
+        <h1>{{ category.carType | translate }}</h1>
+        <div class="cards">
+            <div class="card" *ngFor="let car of category.cars" #animEl>
+                <img [src]="'assets/Images/Cars/Classics/' + car.carImg" alt="">
+                <h4>{{car.carName}}</h4>
+                <div class="elements">
+                    <div class="element">
+                        <i class="bi bi-person-fill"></i>
+                        {{car.carNumberOfSeats}} {{ 'carForRentSeats' | translate }}
+                    </div>
+                    <div class="element">
+                        <i class="bi bi-suitcase-fill"></i>
+                        {{car.carLargeSuitCases }} {{ 'carForRentSuitCase' | translate}}
+                    </div>
+                    <div class="element">
+                        <i class="bi bi-fuel-pump-fill"></i>
+                        {{car.carEnergie | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************ Semi-Premium car ************ -->
+    <div class="cardHolder" *ngFor="let category of SemiPremiumcarsList">
+        <h1>{{ category.carType | translate }}</h1>
+        <div class="cards">
+            <div class="card" *ngFor="let car of category.cars" #animEl>
+                <img [src]="'assets/Images/Cars/SemiPremium/' + car.carImg" alt="">
+                <h4>{{car.carName}}</h4>
+                <div class="elements">
+                    <div class="element">
+                        <i class="bi bi-person-fill"></i>
+                        {{car.carNumberOfSeats}} {{ 'carForRentSeats' | translate }}
+                    </div>
+                    <div class="element">
+                        <i class="bi bi-suitcase-fill"></i>
+                        {{car.carLargeSuitCases }} {{ 'carForRentSuitCase' | translate}}
+                    </div>
+                    <div class="element">
+                        <i class="bi bi-fuel-pump-fill"></i>
+                        {{car.carEnergie | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>

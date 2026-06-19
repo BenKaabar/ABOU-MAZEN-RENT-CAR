@@ -4,7 +4,14 @@
     "navbaritem2": "Cars for Rent",
     "navbaritem3": "Services",
     "navbaritem4": "Rental Locations & Contact",
-    "navbarbutton": "Book by phone"
-
-
+    "navbarbutton": "Book by phone",
+    
+    "-CarForRent": "************************************ Car For Rent *********************************************",
+    "carForRentTitle": "Cars available for rent",
+    "carForRentSubTitle": "Discover our modern, recent fleet tailored to all your needs.",
+    "carForRentTypeClassics": "Classics",
+    "carForRentSeats": "Seats",
+    "carForRentSuitCase": "Large Suitcases",
+    "carForRentenergie": "Petrol",
+    "carForRentTypeSemiPremium": "Semi-Premium"
 }

@@ -39,6 +39,7 @@ export class NavBarComponent implements OnInit {
     this.dropdownOpen = false;
     console.log('switchLanguage ', this.currentLanguage)
     this.CaretDown = false;
+    this.isSidebarVisible = false;
   }
 
   // ********************************************************************** Open Dropdown **********************************************************************
@@ -46,8 +47,6 @@ export class NavBarComponent implements OnInit {
     event?.stopPropagation();
     this.dropdownOpen = !this.dropdownOpen;
     this.CaretDown = !this.CaretDown
-    console.log('dropdownOpen ', this.dropdownOpen)
-    console.log('lang ', this.currentLanguage)
   }
 
   // ********************************************************************** Close Dropdown **********************************************************************

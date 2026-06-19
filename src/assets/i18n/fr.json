@@ -4,7 +4,17 @@
     "navbaritem2": "Véhicules à louer",
     "navbaritem3": "Services",
     "navbaritem4": "Agences & Contact",
-    "navbarbutton": "Réserver par téléphone"
+    "navbarbutton": "Réserver par téléphone",
+
+     "-CarForRent": "************************************ Car For Rent *********************************************",
+     "carForRentTitle": "Voitures disponibles à la location",
+     "carForRentSubTitle": "Découvrez notre flotte moderne, récentes et adaptés à tous vos besoins.",
+     "carForRentTypeClassics": "Classiques",
+     "carForRentSeats": "Places",
+     "carForRentSuitCase": "Bagages",
+     "carForRentenergie": "Thermique",
+     "carForRentTypeSemiPremium": "Semi-Premium"
+
     
     
 }

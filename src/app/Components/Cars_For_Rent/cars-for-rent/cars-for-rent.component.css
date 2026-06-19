@@ -1,0 +1,156 @@
+.main {
+    background-color: #E0E0E0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.title {
+    margin: 50px 0px;
+    animation: ZoomIn 1s ease;
+}
+
+.cardHolder {
+    background-color: #000;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 50px;
+    animation: ZoomIn 1s ease;
+}
+
+.cardHolder h1 {
+    color: white;
+    margin-bottom: 40px;
+    animation: fadeDown 2s ease;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h4 {
+    margin: 16px 0px;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.element i {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* ******************************** medium screen ******************************* */
+/* Medium screens (900px) */
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+    }
+}
+
+
+/* ******************************** small screen ******************************* */
+/* Small screens (900px) */
+@media screen and (max-width: 900px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        width: 70%;
+    }
+
+    .cardHolder {
+        background-color: #000;
+        width: 100%;
+        margin-left: 0px;
+        padding: 60px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* ******************************** very small screen ******************************* */
+/* Very Small screens (900px) */
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 100%;
+    }
+
+    .element i {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+}
+
+/* ******************************** Animation ******************************* */
+
+@keyframes ZoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
