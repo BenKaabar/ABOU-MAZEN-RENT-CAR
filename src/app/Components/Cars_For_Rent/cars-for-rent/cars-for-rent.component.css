@@ -115,7 +115,7 @@
 }
 
 /* ******************************** very small screen ******************************* */
-/* Very Small screens (900px) */
+/* Very Small screens (600px) */
 @media screen and (max-width: 600px) {
     .cards {
         width: 100%;
@@ -127,6 +127,17 @@
         font-size: 16px;
     }
 
+    .title {
+        margin: 25px 0px;
+    }
+
+    .title h1 {
+        font-size: 22px;
+    }
+
+    .title h4 {
+        font-size: 16px;
+    }
 }
 
 /* ******************************** Animation ******************************* */

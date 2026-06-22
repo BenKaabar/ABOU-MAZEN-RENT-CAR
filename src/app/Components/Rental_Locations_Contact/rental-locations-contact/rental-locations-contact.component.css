@@ -1,0 +1,136 @@
+.main {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+}
+
+.title h2 {
+    font-weight: bold;
+}
+
+.title h6 {
+    margin: 30px 0px;
+}
+
+.cardHolder {
+    background-color: #E0E0E0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #000;
+    width: 96%;
+    min-height: 500px;
+    margin: 40px 0px;
+    border-radius: 40px;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: fadeUp 1s ease;
+}
+
+.cardDescription {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardDescription h5 {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.cardLocation {
+    width: 46%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ******************************** small screen ******************************* */
+/* Small screens (900px) */
+@media screen and (max-width: 900px) {
+    .title {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+        min-height: 500px;
+    }
+
+    .cardDescription,
+    .cardLocation {
+        width: 100%;
+        height: 46%;
+    }
+
+    .cardDescription h5 {
+        font-size: 22px;
+    }
+
+    .cardDescription p {
+        letter-spacing: normal;
+        line-height: 16px;
+    }
+}
+
+/* ******************************** very small screen ******************************* */
+/* Very Small screens (600px) */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .title h6 {
+        font-size: 14px;
+    }
+
+    .cardDescription h5 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .cardDescription p {
+        font-size: clamp(12px, 1.2vw, 16px);
+        margin-bottom: 8px;
+    }
+
+    .cardDescription strong,
+    .cardDescription em {
+        font-size: 14px;
+    }
+}
+
+/* ******************************** Animation ******************************* */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

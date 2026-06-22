@@ -13,8 +13,14 @@
      "carForRentSeats": "Places",
      "carForRentSuitCase": "Bagages",
      "carForRentenergie": "Thermique",
-     "carForRentTypeSemiPremium": "Semi-Premium"
+     "carForRentTypeSemiPremium": "Semi-Premium",
 
-    
-    
+    "-RentalLocationsContact": "************************************ Rental Locations Contact *********************************************",
+    "LocationTitle": "Nos Agences",
+    "LocationSubTitle1": "Nos équipes sont joignables tous les jours de 8h à 18h. Les réservations se font par téléphone ou directement en agence. ",
+    "LocationSubTitle2": "Louez dans l’une de nos agences en Tunisie, et restituez votre véhicule dans une autre : confort et liberté, sans compromis.",
+    "LocationCardTitle": "Agence Abou Mazen Rent a Car – Djerba Midoun",
+    "LocationCardDescription": "Notre agence de Djerba est ouverte 24h/24 et 7j/7, pour répondre à tous vos besoins de location à tout moment, que ce soit pour un séjour détente ou un déplacement ponctuel.",
+    "LocationCardAddress": "RX7M+R8 Djerba Midoun, Tunisie",
+    "LocationCardNote": "(Joignable par appel & WhatsApp)"
 }

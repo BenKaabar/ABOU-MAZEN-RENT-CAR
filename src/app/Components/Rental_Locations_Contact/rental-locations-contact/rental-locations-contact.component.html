@@ -1,2 +1,38 @@
 <app-nav-bar></app-nav-bar>
-<h1>contact</h1>
+<div class="main">
+    <div class="title">
+        <h2>{{ 'LocationTitle' | translate}}</h2>
+        <h6>{{ 'LocationSubTitle1' | translate}}</h6>
+        <h6>{{ 'LocationSubTitle2' | translate}}</h6>
+    </div>
+
+    <div class="cardHolder">
+        <div class="card">
+            <div class="cardDescription">
+                <div>
+                    <h5>{{ 'LocationCardTitle' | translate}}</h5>
+                </div>
+                <div>
+                    <p>{{ 'LocationCardDescription' | translate}}</p>
+                </div>
+                <div>
+                    <strong>{{ 'LocationCardAddress' | translate}}</strong>
+                </div>
+                <div>
+                    <a href="https://wa.me/21620685695?text=Hello,%20I%20would%20like%20to%20rent%20a%20car.%20Could%20you%20please%20provide%20information%20about%20availability,%20prices,%20and%20rental%20conditions?."
+                        target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                        <i class="bi bi-telephone-fill"></i> +216 20 685 695
+                    </a>
+                </div>
+                <div>
+                    <em>{{ 'LocationCardNote' | translate}}</em>
+                </div>
+            </div>
+            <div class="cardLocation">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" 
+                    src="https://www.google.com/maps?q=33.8145796,10.9833247&z=16&output=embed">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
