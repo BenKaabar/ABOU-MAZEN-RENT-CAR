@@ -1,0 +1,159 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E0E0E0;
+}
+
+.top {
+    text-align: center;
+    margin: 50px 0px;
+    font-family: Outfit, sans-serif;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.top h1,
+.top h3 {
+    font-weight: 900;
+    animation: fadeUp 1s ease;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.items h3 {
+    color: rgb(227, 75, 75);
+    font-size: 40px;
+    animation: fadeUp 1s ease;
+}
+
+.items P {
+    animation: fadeUp 1s ease;
+}
+
+.cards {
+    background-color: black;
+    color: white;
+    padding: 40px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cardIcon {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardIcon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cardInfo {
+    width: 80%;
+    font-family: Outfit, sans-serif;
+}
+
+.cardTitle {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+span {
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 12px;
+    overflow-wrap: break-word;
+}
+
+/* ******************************** small screen ******************************* */
+/* Small screens (900px) */
+@media screen and (max-width: 900px) {
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+}
+
+/* ******************************** very small screen ******************************* */
+/* Very Small screens (600px) */
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 40px;
+        padding: 40px 20px;
+    }
+
+    .cardIcon {
+        width: 20%;
+    }
+
+    .cardInfo {
+        width: 80%;
+    }
+
+    strong {
+        font-size: 20px;
+    }
+    .ServicesSubTitle{
+        font-size: 20px;
+    }
+}
